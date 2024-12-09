@@ -28,7 +28,7 @@ El controlador responde a la ruta /marcasautos/all.
 Se creo un nuevo proyecto _TestProject_ el cual es parte del proyecto inicial _PruebaTecnicaInicial_. Se agrego la referencia del proyecto  
 inicial para poder manejar los controladores y modelos ya creados.  
 
-Las pruebas realizadas fueron:
+Las pruebas realizadas fueron:  
     - GetOk: Que el objeto de respuesta sea de tipo OkObjectResult  
     - GetEmpty: Cuando no existen marcas, el resultado debe ser una lista vacia  
     - GetNotEmpty: Cuando existe información en base, todos las filas deben ser devueltas  
