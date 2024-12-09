@@ -1,0 +1,26 @@
+services:
+  postgresdb:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=miguel1920
+      - POSTGRES_USER=miguel
+      - POSTGRES_DB=pruebatecnica
+    ports:
+      - 5432:5432
+    networks:
+      - test
+      
+  webservice:
+    build: .
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=postgresdb;Port=5432;Database=pruebatecnica;Username=miguel;Password=miguel1920
+    ports:
+      - 8080:8080
+    networks:
+      - test
+    depends_on:
+      - postgresdb
+
+networks:
+  test:
+    driver: bridge
