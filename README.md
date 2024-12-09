@@ -21,7 +21,7 @@ Se ingresaron 3 tipos de MarcaAuto con un Id y con el Name.
 ## API-REST
 
 Se creo el controlador _MarcasAutosController_ el cual tiene un solo método _GET_ que devuelve todas las amrcas que se encuentren en la tabla.  
-El controlador reponse a la ruta /marcasautos/all.
+El controlador responde a la ruta /marcasautos/all.
 
 ## Pruebas Unitarias
 
@@ -29,9 +29,9 @@ Se creo un nuevo proyecto _TestProject_ el cual es parte del proyecto inicial _P
 inicial para poder manejar los controladores y modelos ya creados.  
 
 Las pruebas realizadas fueron:
-    - GetOk: Que el objeto de respuesta sea de tipo OkObjectResult
-    - GetEmpty: Cuando no existen marcas, el resultado debe ser una lista vacia
-    - GetNotEmpty: Cuando existe información en base, todos las filas deben ser devueltas.
+    - GetOk: Que el objeto de respuesta sea de tipo OkObjectResult  
+    - GetEmpty: Cuando no existen marcas, el resultado debe ser una lista vacia  
+    - GetNotEmpty: Cuando existe información en base, todos las filas deben ser devueltas  
 
 ## Docker Compose
 
