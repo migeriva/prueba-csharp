@@ -35,19 +35,18 @@ Las pruebas realizadas fueron:
 
 ## Docker Compose
 
-Se genero el archivo _docker-compose.yml_ para levantar los servicios de _webservice_ y _postgresdb_. El servicio _webservice_ depende de _postgresdb_ para iniciar  
-ya que se debe aplicar la migración una vez ya creada la base.  
+Se genero el archivo _docker-compose.yml_ para levantar los servicios de _webservice_ y _postgresdb_. El servicio _webservice_ depende de _postgresdb_ para iniciar ya que se debe aplicar la migración una vez ya creada la base.  
 Para levantar el proyecto se dede seguir lo siguiente:
 
-    - Entrar a la carpeta root del proyecto PruebaTecnicaInicial/
-    - Ejecutar el comando:
-     ```console
-     docker-compose up -d
-     ```
-     - Para revisar que los servicios se hayan levantado de forma correcta:
-     ```console
-     docker logs <nombre-contenedor>
-     ```
+- Entrar a la carpeta root del proyecto PruebaTecnicaInicial/
+- Ejecutar el comando:
+```console
+ docker-compose up -d
+```
+ - Para revisar que los servicios se hayan levantado de forma correcta:
+```console
+ docker logs <nombre-contenedor>
+```
 
 ## Pruebas postman
 
